@@ -1,0 +1,119 @@
+/* Responsive compatibility layer only.
+   Keeps the existing visual design intact while preventing overflow on laptops and phones. */
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img,
+video,
+svg,
+canvas,
+iframe {
+  max-width: 100%;
+}
+
+.hero > *,
+.about-grid > *,
+.courses-grid > *,
+.contact-grid > *,
+.contact-shell-grid > *,
+.projects-grid > *,
+.stats-grid > *,
+.skill-bars > *,
+.feature-card > * {
+  min-width: 0;
+}
+
+input,
+textarea,
+select,
+button {
+  max-width: 100%;
+}
+
+.project-card,
+.contact-card,
+.contact-form,
+.timeline-card,
+.feature-card,
+.visual-frame {
+  max-width: 100%;
+}
+
+.modal-dialog {
+  max-width: calc(100vw - 28px);
+  max-height: calc(100dvh - 28px);
+  overflow: auto;
+}
+
+@media (max-width: 860px) {
+  .site-header,
+  .section,
+  .compact-section {
+    max-width: 100%;
+  }
+
+  .hero-copy,
+  .hero-visual,
+  .about-content,
+  .courses-copy,
+  .contact-shell,
+  .contact-form {
+    min-width: 0;
+  }
+
+  .visual-frame,
+  .hero-portrait-wrap {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 560px) {
+  .site-header {
+    width: calc(100% - 16px);
+    padding-inline: 10px;
+    gap: 10px;
+  }
+
+  .brand,
+  .brand-copy {
+    min-width: 0;
+  }
+
+  .brand-copy strong {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .hero-cta,
+  .hero-socials,
+  .project-actions,
+  .footer-links {
+    max-width: 100%;
+  }
+
+  .contact-card,
+  .contact-form,
+  .project-body,
+  .feature-copy {
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (max-width: 380px) {
+  .brand-copy strong {
+    max-width: 118px;
+  }
+
+  .menu-toggle {
+    flex: 0 0 auto;
+  }
+
+  .btn {
+    max-width: 100%;
+  }
+}
