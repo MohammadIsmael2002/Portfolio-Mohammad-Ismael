@@ -33,3 +33,4 @@ Then visit `http://localhost:8000`.
 The hero uses a stylized personal portrait with the dark red cinematic treatment requested for the portfolio.
 
 The project cards use custom local visual mockups. Replace them with real project screenshots later if you want an even closer portfolio presentation.
+
