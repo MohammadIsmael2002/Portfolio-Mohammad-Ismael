@@ -35,3 +35,4 @@ The hero uses a stylized personal portrait with the dark red cinematic treatment
 The project cards use custom local visual mockups. Replace them with real project screenshots later if you want an even closer portfolio presentation.
 
 # Portfolio Updated
+# update

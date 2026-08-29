@@ -111,3 +111,4 @@ if(coursesToggle&&courseList){coursesToggle.addEventListener('click',()=>{
   coursesToggle.setAttribute('aria-expanded',String(expanded));
   coursesToggle.textContent=expanded?'SHOW FEWER COURSES -':'SHOW ALL 11 COURSES +';
 });}
+// update
